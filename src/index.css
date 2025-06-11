@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-white dark:bg-black;
+    @apply text-truth-800 dark:text-white;
+    @apply min-h-screen;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-black dark:bg-white text-white dark:text-black font-medium py-3 px-6 rounded-md transition-all duration-200 shadow-soft hover:shadow-lg hover:translate-y-[-2px];
+  }
+  
+  .btn-secondary {
+    @apply bg-white dark:bg-truth-800 text-truth-800 dark:text-white font-medium py-3 px-6 rounded-md border border-truth-200 dark:border-truth-700 transition-all duration-200 hover:bg-truth-50 dark:hover:bg-truth-700 shadow-soft hover:shadow-md;
+  }
+  
+  .btn-outline {
+    @apply bg-transparent border border-black dark:border-white text-black dark:text-white font-medium py-3 px-6 rounded-md transition-all duration-200 hover:bg-black/5 dark:hover:bg-white/10;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-truth-800 rounded-lg shadow-soft border border-truth-100 dark:border-truth-700 p-6;
+  }
+  
+  .card-alt {
+    @apply bg-truth-50 dark:bg-truth-900/50 rounded-lg p-6 border border-truth-100 dark:border-truth-800;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 rounded-md border border-truth-200 dark:border-truth-700 bg-white dark:bg-truth-800 text-truth-800 dark:text-truth-100 placeholder-truth-400 focus:ring-1 focus:ring-black dark:focus:ring-white focus:border-transparent transition-all duration-200 shadow-inner-soft;
+  }
+
+  .progress-step {
+    @apply flex items-center justify-center w-8 h-8 rounded-full text-sm font-medium transition-all; 
+  }
+
+  .progress-step-active {
+    @apply bg-black dark:bg-white text-white dark:text-black shadow-soft;
+  }
+
+  .progress-step-completed {
+    @apply bg-black dark:bg-white text-white dark:text-black;
+  }
+
+  .progress-step-upcoming {
+    @apply bg-truth-100 dark:bg-truth-700 text-truth-500 dark:text-truth-400;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-black to-truth-600 dark:from-white dark:to-truth-400 bg-clip-text text-transparent;
+  }
+  
+  .glass {
+    @apply bg-white/90 dark:bg-black/90 backdrop-blur-md;
+  }
+
+  .shimmer {
+    @apply bg-gradient-to-r from-transparent via-truth-200 dark:via-truth-700 to-transparent bg-[length:200%_100%] animate-shimmer;
+  }
+  
+  .hide-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}

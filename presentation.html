@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EQuA v2 – Interactive Grant Pitch</title>
+  <!-- Inter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --equa-blue:#475569;
+      --equa-yellow:#eab308;
+      --text-light:#f8fafc;
+      --text-dark:#0f172a;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',sans-serif;scroll-behavior:smooth;}
+    body{background:linear-gradient(180deg,#0f172a 0%,#1e293b 100%);color:var(--text-light);line-height:1.6;}
+    header{position:fixed;top:0;left:0;width:100%;backdrop-filter:blur(8px);background:rgba(15,23,42,0.6);z-index:50;display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;}
+    header h1{font-size:1.25rem;font-weight:700;color:var(--equa-yellow);} 
+    nav a{margin-left:1.5rem;color:var(--text-light);text-decoration:none;font-weight:500;transition:color .2s}
+    nav a:hover{color:var(--equa-yellow);}
+    section{padding:5rem 1rem;max-width:1200px;margin:0 auto;}
+    .hero{display:flex;flex-direction:column;align-items:center;text-align:center;min-height:100vh;justify-content:center;background:url('Equa_ux_ui/banners/equa%20banner.png') center/cover no-repeat;}
+    .hero h2{font-size:2.5rem;font-weight:700;text-shadow:0 2px 6px rgba(0,0,0,.6);} 
+    .cta-btn{margin-top:2rem;background:var(--equa-yellow);color:var(--text-dark);padding:0.75rem 2rem;border:none;border-radius:8px;font-weight:600;cursor:pointer;transition:transform .2s;}
+    .cta-btn:hover{transform:translateY(-2px);} 
+    .grid{display:grid;gap:2rem;margin-top:2rem;}
+    @media(min-width:640px){.grid{grid-template-columns:repeat(2,1fr);} }
+    @media(min-width:1024px){.grid{grid-template-columns:repeat(3,1fr);} }
+    .card{background:#1e293b;border-radius:12px;padding:1.5rem;border:1px solid #334155;transition:transform .2s;}
+    .card:hover{transform:translateY(-4px);} 
+    .card h3{color:var(--equa-yellow);margin-bottom:0.5rem;font-size:1.25rem;}
+    footer{padding:2rem;text-align:center;color:#94a3b8;}
+    /* Banner Images */
+    .banner-img{width:100%;border-radius:12px;margin-top:1rem;box-shadow:0 4px 12px rgba(0,0,0,.3);}   
+  </style>
+</head>
+<body>
+  <header>
+    <h1>EQuA v2</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#pillars">6 Pillars</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#call">Call&nbsp;to&nbsp;Action</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="top">
+    <h2>AI-Powered Relationship Mediation</h2>
+    <p>Transforming conflict into connection through evidence-based pillars, GPT-4, and gamified rewards.</p>
+    <button class="cta-btn" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'});">Learn&nbsp;More</button>
+  </section>
+
+  <section id="about">
+    <h2 style="color:var(--equa-yellow);text-align:center;font-size:2rem;font-weight:700;margin-bottom:1rem;">Why EQuA?</h2>
+    <p style="text-align:center;max-width:700px;margin:0 auto;">Couples everywhere struggle to navigate conflict. EQuA combines six proven therapeutic pillars with cutting-edge AI to guide partners from contested stories to shared reality — rewarding growth with real economic value.</p>
+  </section>
+
+  <section id="pillars">
+    <h2 style="color:var(--equa-yellow);text-align:center;font-size:2rem;font-weight:700;">The Six Pillars</h2>
+    <div class="grid">
+      <div class="card"><h3>Truth</h3><p>Epistemic transparency & verifiable facts.</p></div>
+      <div class="card"><h3>Mediation</h3><p>Principled negotiation workflow.</p></div>
+      <div class="card"><h3>Persuasion</h3><p>Autonomy-supportive influence.</p></div>
+      <div class="card"><h3>Reframing</h3><p>Cognitive reappraisal & context shifts.</p></div>
+      <div class="card"><h3>Qualia</h3><p>First-person felt-sense & interoception.</p></div>
+      <div class="card"><h3>Forgiveness</h3><p>REACH & restorative justice.</p></div>
+    </div>
+    <img src="Equa_ux_ui/banners/6_pillars_of_EQUA_github_readme.png" alt="Six Pillars Banner" class="banner-img" />
+  </section>
+
+  <section id="tokenomics">
+    <h2 style="color:var(--equa-yellow);text-align:center;font-size:2rem;font-weight:700;">Inclusive Tokenomics</h2>
+    <p style="text-align:center;max-width:700px;margin:0 auto;">EQA rewards healthy relationship actions and funds real-world experiences — a community-first economy where users hold 60%+ of supply.</p>
+    <img src="Equa_ux_ui/banners/90_day_roadmap_github_readme.png" alt="Tokenomics Banner" class="banner-img" />
+  </section>
+
+  <section id="roadmap">
+    <h2 style="color:var(--equa-yellow);text-align:center;font-size:2rem;font-weight:700;">90-Day Roadmap</h2>
+    <img src="Equa_ux_ui/banners/90-day-roadmap-v2.png" alt="Roadmap Banner" class="banner-img" />
+  </section>
+
+  <section id="call" style="text-align:center;">
+    <h2 style="color:var(--equa-yellow);font-size:2rem;font-weight:700;">Join the Relationship Revolution</h2>
+    <p style="max-width:700px;margin:0.5rem auto 1.5rem;">Support EQuA v2 to bring AI-powered healing to millions. Together, we can turn conflict into connection and build a thriving, love-centered economy.</p>
+    <a class="cta-btn" href="https://github.com/your_repo" target="_blank">View&nbsp;Code&nbsp;→</a>
+  </section>
+
+  <footer>
+    © 2025 EQuA v2 — Built with love & resilience.
+  </footer>
+</body>
+</html>
