@@ -59,6 +59,9 @@ Full setup instructions and the system prompt are preserved in **`docs/APPENDIX_
 ### Memory System
 The proprietary memory system architecture and implementation details are available in **`docs/APPENDIX_D_Memory_System.md`**.
 
+### User Journey & UI Visuals
+A comprehensive visual walkthrough of the user experience is available in **`docs/EQUA_PDF_UI_visuals.pdf`**.
+
 ### Tokenomics & Vision Docs
 Deep-dive appendices: `docs/APPENDIX_B_Tokenomics.md`, `docs/APPENDIX_C_Multiplayer_Vision.md`.
 

@@ -36,7 +36,7 @@ Current solutions—traditional therapy, generic chatbots, self-help apps—lack
 - Secure memory system architecture ✅  
 - Token economy demo ✅  
 
-*(Screenshots / GIF banner here)*
+*(See comprehensive user journey and UI visuals in the [User Journey PDF](EQUA_PDF_UI_visuals.pdf))*
 
 ## 5  Demo Instructions (5-Minute Script)
 | Minute | What reviewers will see |
@@ -81,4 +81,4 @@ Immediate (6 mo) and long-term (3 y) outcomes; see appendix for metrics.
 
 ---
 ### Appendices
-A – [AI Setup](APPENDIX_A_AI_SETUP.md)  •  B – [Tokenomics](APPENDIX_B_Tokenomics.md)  •  C – [Multiplayer Vision](APPENDIX_C_Multiplayer_Vision.md)  •  D – [Memory System](APPENDIX_D_Memory_System.md)
+A – [AI Setup](APPENDIX_A_AI_SETUP.md)  •  B – [Tokenomics](APPENDIX_B_Tokenomics.md)  •  C – [Multiplayer Vision](APPENDIX_C_Multiplayer_Vision.md)  •  D – [Memory System](APPENDIX_D_Memory_System.md)  •  E – [User Journey & UI Visuals](EQUA_PDF_UI_visuals.pdf)
